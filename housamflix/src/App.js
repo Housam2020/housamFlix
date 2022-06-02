@@ -1,35 +1,29 @@
 import "./App.css";
 import Row from "./Row";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import requests from "./requests";
+import Banner from "./Banner";
+import axios from "axios";
 
 function App() {
-  const [count, setCount] = useState(() => {
-    return 4;
-  });
-
-  const [theme, setTheme] = useState(() => {
-    return 4;
-  });
-
-  Math.random;
-
-  function decrementCount() {
-    setCount((prevCount) => prevCount - 1);
-  }
-
-  function incrementCount() {
-    setCount((prevCount) => prevCount + 1);
-  }
+  const [movies, setMovies] = useState([]);
 
   return (
     <div className="App">
-      <hi1>my project!!</hi1>
-      <Row title="NETFLIX ORIGINALS"></Row>
-      <Row title="Trending Now"></Row>
+      {/* Nav */}
+      <Banner />
+      <Row
+        title="NETFLIX ORIGINALS"
+        fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
+      ></Row>
+      <Row title="Trending Now" fetchUrl={requests.fetchTrending}></Row>
 
-      <button onClick={decrementCount}>-</button>
-      <span>{count}</span>
-      <button onClick={incrementCount}>+</button>
+      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}></Row>
+      <Row title="Comedy Movies" fetchUrl={requests.fetchTopRated}></Row>
+      <Row title="Horror Movies" fetchUrl={requests.fetchComedyMovies}></Row>
+      <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies}></Row>
+      <Row title="Documentaries" fetchUrl={requests.fetchDocumantaries}></Row>
     </div>
   );
 }
