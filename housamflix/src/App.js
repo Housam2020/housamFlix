@@ -4,13 +4,15 @@ import React, { useEffect, useState } from "react";
 import requests from "./requests";
 import Banner from "./Banner";
 import axios from "axios";
+import Nav from "./Nav";
+import Test from "./Test";
 
 function App() {
   const [movies, setMovies] = useState([]);
 
   return (
     <div className="App">
-      {/* Nav */}
+      <Nav></Nav>
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"
