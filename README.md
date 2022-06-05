@@ -1,2 +1,9 @@
 # housamFlix
-Netflix clone built using React for frontend, Firebase backend, Axios for HTTP requests and pulling platform data from the TMDB API. This app has tons of dynamic functionality like user sign up and login, banners, scrolling rows, posters, trailers, among other amazing tools that empower the user.
+
+### Link: https://housamflix-c30b0.web.app/
+
+This is a dynamic Netflix-esque webpage built using React and CSS frontend, Firebase backend, Axios HTTP requests, and TMDB for Netflix API requests. This app has tons of dynamic functionality like banners, scrolling rows, posters, trailers, fading nav bar among other amazing tools that empower the user.
+
+![image](https://user-images.githubusercontent.com/61119272/172074833-a32b8b0e-1d40-47b9-a817-d5b867069e04.png)
+
+use shift + scroll to scroll through rows
