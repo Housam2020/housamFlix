@@ -1,6 +1,6 @@
 # housamFlix
 
-### Link: https://housamflix-c30b0.web.app/
+> Link: https://housamflix-c30b0.web.app/
 
 This is a dynamic Netflix-esque webpage built using React and CSS frontend, Firebase backend, Axios HTTP requests, and TMDB for Netflix API requests. This app has tons of dynamic functionality like banners, scrolling rows, posters, trailers, fading nav bar among other amazing tools that empower the user.
 
